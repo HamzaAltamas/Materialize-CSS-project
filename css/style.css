@@ -1,0 +1,123 @@
+:root {
+  --primary_color: #3730a3;
+  --primary_color_light: #6e66d686;
+  --black: rgb(79, 79, 79);
+  --white: #f1f1f1;
+  --robcon: "Roboto Condensed", sans-serif;
+  --trans: 0.5s;
+}
+/* common css start */
+body {
+  background-color: var(--white);
+  font-family: var(--robcon);
+}
+/* common css end */
+
+/* modal start */
+.modal {
+  overflow-y: visible !important;
+  background-color: var(--white) !important;
+}
+.modal-footer {
+  overflow-x: initial !important;
+  background-color: var(--white) !important;
+}
+.modal-content {
+  margin-bottom: 0 !important;
+  padding-bottom: 60px !important;
+}
+.input-field {
+  padding: 15px 0;
+}
+.modal-inputs {
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.input-name {
+  transition: var(--trans) !important;
+  -webkit-transition: var(--trans) !important;
+  -moz-transition: var(--trans) !important;
+  -ms-transition: var(--trans) !important;
+  -o-transition: var(--trans) !important;
+}
+.input-name-color-change {
+  color: var(--primary_color) !important;
+}
+
+.modal-inputs:focus {
+  border-bottom: 1px solid var(--primary_color) !important;
+  box-shadow: 0 1px 0 0 var(--primary_color) !important;
+}
+/* modal end */
+
+/* navbar start */
+nav {
+  background-color: var(--white);
+  color: var(--black);
+}
+.navbar-logo {
+  font-weight: 700;
+  color: var(--primary_color) !important;
+}
+.nav-items {
+  position: relative;
+  color: var(--black) !important;
+  font-weight: 600 !important;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.nav-items::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  right: 0px;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary_color);
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.nav-items:hover::after {
+  width: 100%;
+}
+.nav-items:hover {
+  background-color: transparent !important;
+  color: var(--primary_color) !important;
+}
+.navbar-dropdown {
+  background-color: var(--white) !important;
+}
+
+.navbar-contact-btn {
+  background-color: var(--primary_color);
+  color: var(--white) !important;
+  font-family: var(--robcon);
+  font-weight: 700;
+}
+.navbar-contact-btn:focus {
+  background-color: var(--primary_color) !important;
+}
+.navbar-contact-btn:hover {
+  background-color: var(--primary_color_light);
+}
+.navbar-dropdown-icon {
+  color: var(--primary_color);
+}
+.navbar-contact-btn-mobile-wrapper {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.navbar-sm {
+  background-color: var(--white);
+}
+/* navbar end */

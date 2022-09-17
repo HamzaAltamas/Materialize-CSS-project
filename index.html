@@ -4,7 +4,231 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/Hamza Altamas.jpg" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Hamza Altamas</title>
   </head>
-  <body></body>
+  <body>
+    <!-- modals start -->
+    <!-- Modal Structure -->
+    <!-- modal for lg screen -->
+    <div id="modal1" class="modal">
+      <form action="">
+        <div class="modal-content row">
+          <div class="col s12 m6 l6">
+            <div class="input-field">
+              <!-- full name -->
+              <i class="material-icons prefix nameicon">account_circle</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate name-modal-inputs modal-inputs"
+              />
+              <label for="icon_prefix " class="name-input-name"
+                >Full Name</label
+              >
+            </div>
+            <!-- telephone -->
+            <div class="input-field">
+              <i class="material-icons prefix telicon">contact_phone</i>
+              <input
+                id="icon_telephone"
+                type="number"
+                class="validate tel-modal-inputs modal-inputs"
+              />
+              <label for="icon_telephone " class="tel-input-name"
+                >Telephone</label
+              >
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <!-- email -->
+            <div class="input-field">
+              <i class="material-icons prefix mailicon">email</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate mail-modal-inputs modal-inputs"
+              />
+              <label for="icon_prefix " class="mail-input-name">Email</label>
+            </div>
+            <!-- message -->
+            <div class="input-field">
+              <i class="material-icons prefix msgicon">mode_edit</i>
+              <textarea
+                id="icon_prefix2"
+                class="materialize-textarea msg-modal-inputs modal-inputs"
+              ></textarea>
+              <label for="icon_prefix2 " class="msg-input-name">Message</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href=""
+              class="waves-effect waves-light btn navbar-contact-btn modal-trigger"
+            >
+              Submit
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- modal for sm screen -->
+    <div id="modal2" class="modal">
+      <form action="">
+        <div class="modal-content row">
+          <div class="col s12 m6 l6">
+            <div class="input-field">
+              <!-- full name -->
+              <i class="material-icons prefix nameicon">account_circle</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate name-modal-inputs modal-inputs"
+              />
+              <label for="icon_prefix " class="name-input-name"
+                >Full Name</label
+              >
+            </div>
+            <!-- telephone -->
+            <div class="input-field">
+              <i class="material-icons prefix telicon">contact_phone</i>
+              <input
+                id="icon_telephone"
+                type="number"
+                class="validate tel-modal-inputs modal-inputs"
+              />
+              <label for="icon_telephone " class="tel-input-name"
+                >Telephone</label
+              >
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <!-- email -->
+            <div class="input-field">
+              <i class="material-icons prefix mailicon">email</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate mail-modal-inputs modal-inputs"
+              />
+              <label for="icon_prefix " class="mail-input-name">Email</label>
+            </div>
+            <!-- message -->
+            <div class="input-field">
+              <i class="material-icons prefix msgicon">mode_edit</i>
+              <textarea
+                id="icon_prefix2"
+                class="materialize-textarea msg-modal-inputs modal-inputs"
+              ></textarea>
+              <label for="icon_prefix2 " class="msg-input-name">Message</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href=""
+              class="waves-effect waves-light btn navbar-contact-btn modal-trigger"
+            >
+              Submit
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- modals end -->
+
+    <!-- navbar start -->
+
+    <!-- nav Dropdown Structure start -->
+    <!-- nav dropdown for lg screen -->
+    <ul id="dropdown1" class="dropdown-content navbar-dropdown">
+      <li><a href="#!" class="nav-items">one</a></li>
+      <li><a href="#!" class="nav-items">two</a></li>
+      <li><a href="#!" class="nav-items">three</a></li>
+    </ul>
+    <!-- nav dropdown for sm screen -->
+    <ul id="dropdown1" class="dropdown-content navbar-dropdown">
+      <li><a href="#!" class="nav-items">one</a></li>
+      <li><a href="#!" class="nav-items">two</a></li>
+      <li><a href="#!" class="nav-items">three</a></li>
+    </ul>
+    <!-- nav Dropdown Structure  end-->
+
+    <!-- navbar start -->
+    <div class="navbar-fixed navbar">
+      <nav class="nav-extended">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo navbar-logo">CoderHamza</a>
+          <!-- ham icon start -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons navbar-dropdown-icon">menu</i></a
+          >
+          <!-- ham icon end -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="" class="nav-items">Home</a></li>
+            <li><a href="" class="nav-items">About</a></li>
+            <li><a href="" class="nav-items">Portfolio</a></li>
+            <li><a href="" class="nav-items">Blog</a></li>
+            <li><a href="" class="nav-items">Contact</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+              <a
+                class="dropdown-trigger nav-items"
+                href="#!"
+                data-target="dropdown1"
+                >Pages<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+            <a
+              data-target="modal1"
+              class="waves-effect waves-light btn navbar-contact-btn modal-trigger"
+              >Contact</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- side nav for sm device start -->
+    <ul class="sidenav navbar-sm" id="mobile-demo">
+      <li><a href="" class="nav-items">Home</a></li>
+      <li><a href="" class="nav-items">About</a></li>
+      <li><a href="" class="nav-items">Portfolio</a></li>
+      <li><a href="" class="nav-items">Blog</a></li>
+      <!-- Dropdown Trigger -->
+      <li>
+        <a class="dropdown-trigger nav-items" href="#!" data-target="dropdown1"
+          >Pages<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+      <div class="navbar-contact-btn-mobile-wrapper">
+        <a
+          data-target="modal2"
+          class="waves-effect waves-light btn navbar-contact-btn modal-trigger"
+          >Contact</a
+        >
+      </div>
+    </ul>
+    <!-- side nav for sm device end -->
+
+    <!-- script tags start -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/script.js"></script>
+    <!-- script tags end -->
+  </body>
 </html>

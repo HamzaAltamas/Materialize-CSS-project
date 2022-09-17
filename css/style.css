@@ -1,10 +1,11 @@
 :root {
-  --primary_color: #3730a3;
+  --primary_color: #5c3766;
   --primary_color_light: #6e66d686;
   --black: rgb(79, 79, 79);
   --white: #f1f1f1;
   --robcon: "Roboto Condensed", sans-serif;
   --trans: 0.5s;
+  --ashtxt: #a4a4a4;
 }
 /* common css start */
 body {
@@ -121,3 +122,96 @@ nav {
   background-color: var(--white);
 }
 /* navbar end */
+
+/* banner start  */
+
+.banner-txt {
+  width: 100%;
+  margin: auto 0;
+}
+.banner-heading {
+  font-weight: bold;
+  color: var(--primary_color);
+}
+.banner-para {
+  color: var(--ashtxt);
+}
+.banner-btn {
+  display: flex;
+  column-gap: 15px;
+  padding: 10px 0 0 0;
+}
+.banner-readmore-btn {
+  background-color: var(--white) !important;
+  color: var(--primary_color) !important;
+  border: 1px solid var(--primary_color) !important;
+}
+.banner-img-wrapper {
+  padding: 50px 0;
+}
+.banner-img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* banner end */
+
+/* media query start */
+@media (min-width: 250px) and (max-width: 768px) {
+  /* banner start */
+  #home {
+    padding: 0 0;
+  }
+  .banner-heading {
+    font-size: 35px;
+  }
+
+  /* banner end */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* banner start */
+  #home {
+    padding: 0px 0;
+  }
+  .banner-heading {
+    font-size: 40px;
+  }
+  .banner-txt {
+    padding-top: 55px;
+  }
+
+  /* banner end */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #home {
+    padding: 0px 0;
+  }
+  .banner-heading {
+    font-size: 50px;
+  }
+  .banner-txt {
+    padding-top: 45px;
+  }
+
+  /* banner end */
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* banner start */
+  .banner-txt {
+    padding-top: 60px;
+  }
+
+  /* banner end */
+}
+
+@media (min-width: 1400px) {
+}
+/* media query end */

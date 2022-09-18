@@ -37,3 +37,18 @@ $(".msg-modal-inputs").click(function () {
   $(".msg-input-name").addClass("input-name-color-change");
   $(".msgicon").addClass("input-name-color-change");
 });
+
+// theme btn icon change
+$(".theme-btn").click(function () {
+  if ($(".theme-icon").text() === "brightness_2") {
+    $(".theme-icon").text("brightness_high");
+  } else {
+    $(".theme-icon").text("brightness_2");
+  }
+});
+
+// color change on theme btn
+
+$(".theme-btn").click(function () {
+  $("body").toggleClass("theme-changed");
+});

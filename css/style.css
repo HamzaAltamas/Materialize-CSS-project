@@ -14,6 +14,20 @@ body {
 }
 /* common css end */
 
+/* theme btn start */
+.theme-btn {
+  background-color: var(--primary_color) !important;
+  position: fixed;
+  right: 20px;
+  top: 80px;
+}
+.theme-changed {
+  --black: #f1f1f1;
+  --white: rgb(79, 79, 79);
+  --primary_color: #da53ff;
+}
+/* theme btn end */
+
 /* modal start */
 .modal {
   overflow-y: visible !important;
@@ -162,18 +176,42 @@ nav {
 /* banner end */
 
 /* media query start */
-@media (min-width: 250px) and (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 600px) {
   /* banner start */
   #home {
     padding: 0 0;
   }
   .banner-heading {
     font-size: 35px;
+    margin-top: 0 !important;
+  }
+  .banner-txt {
+    padding-top: 30px;
   }
 
   /* banner end */
+  /* theme btn start */
+  .theme-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+  }
+  /* theme btn end */
 }
-
+@media (min-width: 601px) and (max-width: 767px) {
+  #home {
+    padding: 0 0;
+  }
+  .banner-heading {
+    font-size: 35px;
+  }
+  .banner-txt {
+    padding-top: 10px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   /* banner start */
   #home {
@@ -183,7 +221,7 @@ nav {
     font-size: 40px;
   }
   .banner-txt {
-    padding-top: 55px;
+    padding-top: 35px;
   }
 
   /* banner end */
@@ -194,7 +232,7 @@ nav {
     padding: 0px 0;
   }
   .banner-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
   .banner-txt {
     padding-top: 45px;
@@ -206,7 +244,7 @@ nav {
 @media (min-width: 1200px) and (max-width: 1400px) {
   /* banner start */
   .banner-txt {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
   /* banner end */

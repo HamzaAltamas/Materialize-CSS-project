@@ -52,3 +52,13 @@ $(".theme-btn").click(function () {
 $(".theme-btn").click(function () {
   $("body").toggleClass("theme-changed");
 });
+
+// portfolio gallery
+$(".carousel").carousel();
+
+// blog gallery
+
+$(".carousel.carousel-slider").carousel({
+  indicators: true,
+  numVisible: 4,
+});
